@@ -1,0 +1,23 @@
+{
+  "name": "demo_monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Raman Iyer",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "common"
+  ],
+  "scripts": {
+    "setup": "chmod +x ./setup.sh && ./setup.sh",
+    "dev-frontend": "yarn workspace @demo_monorepo/frontend dev",
+    "dev-backend": "yarn workspace @demo_monorepo/backend dev",
+    "build-common": "yarn workspace @demo_monorepo/common build"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

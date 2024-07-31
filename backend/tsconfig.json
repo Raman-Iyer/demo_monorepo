@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "isolatedModules": true, // This mandatory change is added by next.js when script "npm run dev" is run(Requirement for babel)
+    "outDir": "./dist",
+  },
+  "include": ["server.ts", "src/**/*.{ts}"],
+  "exclude": ["src/**/__tests__", "src/**/__fixtures__"]
+}

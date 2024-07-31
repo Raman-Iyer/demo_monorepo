@@ -1,0 +1,10 @@
+{
+  "name": "@demo_monorepo/common",
+  "version": "1.0.0",
+  "author": "Raman Iyer",
+  "license": "MIT",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  }
+}
